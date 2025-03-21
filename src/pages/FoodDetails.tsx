@@ -15,8 +15,8 @@ import { useCart, FoodItem } from '@/context/CartContext';
 import AnimatedPage from '@/components/AnimatedPage';
 import { staggered } from '@/utils/animations';
 
-// Import mock data from Index
-import { foodItems } from '../pages/Index';
+// Import foodItems constant directly
+import { foodItems } from './Index';
 
 const FoodDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();

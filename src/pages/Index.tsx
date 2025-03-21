@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Coffee, Pizza, Salad, Sandwich, Hamburger, Clock } from 'lucide-react';
+import { Search, Filter, Coffee, Pizza, Salad, Sandwich, Burger as Hamburger, Clock } from 'lucide-react';
 import { FoodItem } from '@/context/CartContext';
 import FoodCard from '@/components/FoodCard';
 import CategoryPill from '@/components/CategoryPill';
@@ -18,7 +17,8 @@ const categories = [
   { id: 'drinks', name: 'Drinks', icon: <Coffee size={16} /> },
 ];
 
-const foodItems: FoodItem[] = [
+// Export foodItems so it can be imported in other files
+export const foodItems: FoodItem[] = [
   {
     id: '1',
     name: 'Classic Cheeseburger',

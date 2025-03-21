@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import { useAuth } from '@/hooks/useAuth';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 import AnimatedPage from '@/components/AnimatedPage';
 import { staggered } from '@/utils/animations';
 

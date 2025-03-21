@@ -1,6 +1,6 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 export interface FoodItem {
   id: string;
@@ -16,6 +16,9 @@ export interface FoodItem {
 interface CartItem extends FoodItem {
   quantity: number;
 }
+
+// Export CartItem interface so it can be used by other components
+export type { CartItem };
 
 interface CartContextType {
   items: CartItem[];
