@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Coffee, Pizza, Salad, Sandwich, Burger as Hamburger, Clock } from 'lucide-react';
+import { Search, Filter, Coffee, Pizza, Salad, Sandwich, Utensils, Clock } from 'lucide-react';
 import { FoodItem } from '@/context/CartContext';
 import FoodCard from '@/components/FoodCard';
 import CategoryPill from '@/components/CategoryPill';
@@ -10,7 +11,7 @@ import { staggered } from '@/utils/animations';
 // Mock data
 const categories = [
   { id: 'all', name: 'All', icon: <Filter size={16} /> },
-  { id: 'burgers', name: 'Burgers', icon: <Hamburger size={16} /> },
+  { id: 'burgers', name: 'Burgers', icon: <Utensils size={16} /> },
   { id: 'pizza', name: 'Pizza', icon: <Pizza size={16} /> },
   { id: 'salads', name: 'Salads', icon: <Salad size={16} /> },
   { id: 'sandwiches', name: 'Sandwiches', icon: <Sandwich size={16} /> },
